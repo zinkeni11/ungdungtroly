@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TimePicker
+        android:id="@+id/tpAlarm"
+        android:numbersTextColor="@color/colorBlack"
+        android:numbersBackgroundColor="@color/colorDivide"
+        android:headerBackground="@color/colorHeaderAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnAlarmCancel"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorWhite"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnAlarmOk"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorBlack"
+            android:text="Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoaiCongViecActivity"
+            android:label="@string/title_activity_loai_cong_viec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CongViecActivity"
+            android:label="@string/title_activity_cong_viec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ThemLoaiCongViecActivity" />
+        <activity android:name=".SuaLoaiCongViecActivity" />
+        <activity android:name=".ChiTietLoaiCongViecActivity" />
+        <activity android:name=".ThemCongViecActivity" />
+        <activity android:name=".SuaCongViecActivity" />
+        <activity android:name=".ChiTietCongViecActivity" />
+
+        <receiver android:name="com.example.receiver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="YES_ACTION" />
+                <action android:name="STOP_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.service.SongService"
+            android:enabled="true" />
+
+        <activity android:name=".LocActivity" />
+    </application>
+
+</manifest>
